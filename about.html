@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from duruthemes.com/demo/html/travol/multipage-slideshow/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Nov 2024 05:48:58 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Travol Agency</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .carousel-container {
+            position: relative;
+            max-width: 80%; 
+            margin: auto;
+            overflow: hidden; 
+          }
+          
+          .mySlides img {
+            width: 100%;
+            height: 400px; 
+            border-radius: 15px; 
+          }
+          
+          .mySlides .text, .mySlides .number {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            color: #fff;
+            background:rgba(255, 255, 255, 0.1);
+            padding: 5px 10px;
+            border-radius: 5px;
+          }
+          
+          .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+            user-select: none;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0);
+          }
+          
+          .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.025);
+          }
+          
+          .prev {
+            left: 10px;
+          }
+          
+          .next {
+            right: 10px;
+          }
+          
+          .dots-container {
+            text-align: center;
+            margin-top: 15px;
+          }
+          
+          .dots {
+            cursor: pointer;
+            height: 12px;
+            width: 12px;
+            margin: 0 4px;
+            background-color: #bbbbbb00;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+          
+          .dots:hover, .dots.active {
+            background-color: #717171;
+          }
+          
+    </style>
+   
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+        </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+   
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-wrapper">
+            <a class="logo" href="index.html"> <img src="img/slider/insight-logo-1.png" class="logo-img" alt=""> </a>
+            <!-- <a class="logo" href="index.html"> <h2>TRAVOL <span>explore the world</span></h2> </a> -->
+        </div>
+        <!-- Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="ti-menu"></i></span> </button>
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </li>
+                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Service<i class="ti-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="holiday-package.html" class="dropdown-item"><span>Holiday Packages</span></a></li>
+                        <li><a href="visa-assistence.html" class="dropdown-item"><span>Global Visa Assistance</span></a></li>
+                        <li><a href="umrah-package.html" class="dropdown-item"><span>Umrah Packages</span></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- Header Banner -->
+    <div class="banner-header section-padding valign bg-img bg-fixed back-position-center" data-overlay-dark="5" data-background="img/blog/a-1.jpeg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 caption mt-90">
+                    <h5>The best travel agency</h5>
+                    <h1>About</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <section class="about cover section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Left side: Image -->
+                <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
+                    <div class="img-exp">
+                        <div class="about-img">
+                            <div class="img">
+                                <img src="img/blog/a-2.jpeg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right side: Content -->
+                <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
+                    <p>You can choose any country with good tourism. Agency elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the pellentesque velit. Donec id velit ac arcu posuere blane.</p>
+                    <p>Agency elementum sesue the aucan vestibulum aliquam justo in sapien rutin volutpat. Donec in quis the pellentesque veliten.</p>
+                    <p>Hotel ut nisl quam nestibulum ac quam nec odio elementum sceisue the duru ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine.</p>
+                    <ul class="list-unstyled about-list mb-30">
+                        <li>
+                            <div class="about-list-icon"><span class="ti-check"></span></div>
+                            <div class="about-list-text">
+                                <p>20 Years of Experience</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="about-list-icon"><span class="ti-check"></span></div>
+                            <div class="about-list-text">
+                                <p>150+ Tour Destinations</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- <div class="phone-call mb-30">
+                        <div class="icon"><span class="flaticon-phone-call"></span></div>
+                        <div class="text">
+                            <p>For information</p> <a href="tel:855-333-4444">855 333 4444</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team -->
+
+    <section style="padding: 60px 0; background-color: #f9f9f900; text-align: center;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="font-size: 2.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 20px;">Discover Our Services</h2>
+            <p style="font-size: 1.2rem; color: #7f8c8d; line-height: 1.6; max-width: 700px; margin: 0 auto;">
+                Explore our premium travel and tour solutions that are designed to make your journey seamless and unforgettable. Let us help you create memories with services tailored to your needs.
+            </p>
+        </div>
+    </section>
+    
+
+    <div class="carousel-container">
+        <div class="mySlides animate">
+          <img src="img/tours/h-1.jpg" alt="slide">
+          <div class="number"></div>
+          <div class="text"></div>
+        </div>
+        <div class="mySlides animate">
+          <img src="img/tours/h-2.jpg" alt="slide">
+          <div class="number"></div>
+          <div class="text"></div>
+        </div>
+        <div class="mySlides animate">
+          <img src="img/tours/h-3.jpg" alt="slide">
+          <div class="number"></div>
+          <div class="text"></div>
+        </div>
+        <div class="mySlides animate">
+          <img src="img/tours/hotel.png" alt="slide">
+          <div class="number"></div>
+          <div class="text"></div>
+        </div>
+        <div class="mySlides animate">
+          <img src="img/tours/visa.png" alt="slide">
+          <div class="number"></div>
+          <div class="text"></div>
+        </div>
+    
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+    
+        <div class="dots-container">
+          <span class="dots" onclick="currentSlide(1)"></span>
+          <span class="dots" onclick="currentSlide(2)"></span>
+          <span class="dots" onclick="currentSlide(3)"></span>
+          <span class="dots" onclick="currentSlide(4)"></span>
+          <span class="dots" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+   
+    <!-- Testimonials -->
+    <section class="numbers">
+        <div class="section-padding bg-img bg-fixed back-position-center" data-background="img/about/bg-1.png" data-overlay-dark="6">
+            <div class="container">
+                <!-- Section Heading -->
+                <!-- <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="section-title">Our Services</h2>
+                        <p class="section-subtitle">Explore our premium travel and tour services designed to make your journey seamless and memorable.</p>
+                    </div>
+                </div>  -->
+                <!-- First Row -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="item text-center">  
+                        <span class="icon">
+                            <i class="fas fa-plane front"></i>
+                            <i class="fas fa-plane back"></i>
+                        </span>
+                        <h6>Flight Booking</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item text-center">  
+                        <span class="icon">
+                            <i class="fas fa-hotel front"></i>
+                            <i class="fas fa-hotel back"></i>
+                        </span>
+                        <h6>Hotel Booking</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item text-center">  
+                        <span class="icon">
+                            <i class="fas fa-suitcase-rolling front"></i>
+                            <i class="fas fa-suitcase-rolling back"></i>
+                        </span>
+                        <h6>Holiday Packages</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item text-center">  
+                        <span class="icon">
+                            <i class="fas fa-passport front"></i>
+                            <i class="fas fa-passport back"></i>
+                        </span>
+                        <h6>Global Visa Assistance</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Row -->
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="item text-center">  
+                        <span class="icon">
+                            <i class="fas fa-kaaba front"></i>
+                            <i class="fas fa-kaaba back"></i>
+                        </span>
+                        <h6>Umrah Packages</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item text-center">  
+                        <span class="icon">
+                            <i class="fas fa-mosque front"></i>
+                            <i class="fas fa-mosque back"></i>
+                        </span>
+                        <h6>Hajj Packages</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item text-center">  
+                        <span class="icon">
+                            <i class="fas fa-shield-alt front"></i>
+                            <i class="fas fa-shield-alt back"></i>
+                        </span>
+                        <h6>Travel Insurance</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item text-center">  
+                        <span class="icon">
+                            <i class="fas fa-taxi front"></i>
+                            <i class="fas fa-taxi back"></i>
+                        </span>
+                        <h6>Airport Transfers</h6>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section><br><br><br>
+    
+    <!-- Clients -->
+
+    <!-- Footer -->
+    <footer class="footer clearfix">
+        <div class="container">
+            <!-- First footer -->
+            <div class="first-footer">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- <div class="links dark footer-contact-links">
+                            <div class="footer-contact-links-wrapper">
+                                <div class="footer-contact-link-wrapper">
+                                    <div class="image-wrapper footer-contact-link-icon">
+                                        <div class="icon-footer"> <i class="flaticon-phone-call"></i> </div>
+                                    </div>
+                                    <div class="footer-contact-link-content">
+                                        <h6>Call us</h6>
+                                        <p>+1 123-456-0606</p>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-links-divider"></div>
+                                <div class="footer-contact-link-wrapper">
+                                    <div class="image-wrapper footer-contact-link-icon">
+                                        <div class="icon-footer"> <i class="flaticon-message"></i> </div>
+                                    </div>
+                                    <div class="footer-contact-link-content">
+                                        <h6>Write to us</h6>
+                                        <p>info@travolagency.com</p>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-links-divider"></div>
+                                <div class="footer-contact-link-wrapper">
+                                    <div class="image-wrapper footer-contact-link-icon">
+                                        <div class="icon-footer"> <i class="flaticon-placeholder"></i> </div>
+                                    </div>
+                                    <div class="footer-contact-link-content">
+                                        <h6>Address</h6>
+                                        <p>24 King St, SC 29401 USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Second footer -->
+            <div class="second-footer">
+                <div class="row">
+                    <!-- about & social icons -->
+                    <div class="col-md-4 widget-area">
+                        <div class="widget clearfix">
+                            <div class="footer-logo"> <img class="img-fluid" src="img/insight-logo-white.png" alt=""> </div>
+                            <div class="widget-text">
+                                <p>Quisque imperdiet sapien porttito the bibendum sellentesque the commodo erat acar accumsa lobortis, enim diam the nesuen.</p>
+                                <div class="social-icons">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="#"><i class="ti-twitter"></i></a></li>
+                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="#"><i class="ti-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- quick links -->
+                    <div class="col-md-3 offset-md-1 widget-area">
+                        <div class="widget clearfix usful-links">
+                            <h3 class="widget-title">Quick Links</h3>
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="tours.html">Tours</a></li>
+                                <li><a href="destination.html">Destinations</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- subscribe -->
+                    <div class="col-md-4 widget-area">
+                        <div class="widget clearfix">
+                            <h3 class="widget-title">Subscribe</h3>
+                            <p>Sign up for our monthly blogletter to stay informed about travel and tours</p>
+                            <div class="widget-newsletter">
+                                <form action="#">
+                                    <input type="email" placeholder="Email Address" required>
+                                    <button type="submit">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom footer -->
+            <div class="bottom-footer-text">
+                <div class="row copyright">
+                    <div class="col-md-12">
+                        <p class="mb-0">©2023 <a href="#">DuruThemes</a>. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/YouTubePopUp.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    
+    
+</body>
+
+<!-- Mirrored from duruthemes.com/demo/html/travol/multipage-slideshow/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Nov 2024 05:48:59 GMT -->
+</html>
